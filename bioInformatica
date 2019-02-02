@@ -1,0 +1,103 @@
+    Atividade
+
+    Inicialmente iremos instalar o Python e a biblioteca bioPython
+
+    Se tiver dificuldades, lembre-se: “Google is your friend!”
+
+    No Linux e no Mac o Python já vem por default instalado e no Windows pode-se baixar em https://www.python.org/downloads/.
+
+     No Biopython existe o pacote Bio.Seq e o pacote Bio.SeqIO para leitura e gravação de sequências, com suporte para os formatos: abi, ace, clustal, embl, fasta, fastq, fastq-solexa, fastq-illumina, genbank ou gb, ig, imgt, nexus, phd, phylip, pir, seqxml, sff, stockholm, swiss, tab, qual e uniprot-xml.
+
+    Nesta tarefa abordaremos técnicas para manipulação de sequências usando Biopython e até mesmo funções básicas do Python.
+
+    Sequências
+
+    Inicialmente trabalharemos com sequências de bases nitrogenadas, que são integrantes dos ácidos nucléicos.
+
+    Os ácidos nucléicos são o DNA e o RNA.
+
+    Bases nitrogenadas do DNA:
+
+    (A) adenina
+
+    (T) timina
+
+    (C) citosina
+
+    (G) guanina
+
+    Uma sequência possível de DNA
+
+    GTCATCGATTGACCTTACGTTA
+
+    Bases nitrogenadas do RNA
+
+    (A) adenina
+
+    (U) uracila
+
+    (C) citosina
+
+    (G) guanina
+
+    Uma sequência possível de RNA
+
+    GUCAUCGAUUGACCUUACGUUA
+
+     
+
+    Desta forma, quando nos deparamos com uma sequência, é fácil distinguir se é de DNA ou de RNA pela presença da Timina ou da Uracila.
+
+     
+
+    1 Concatenando sequências
+
+    Nós podemos unir sequências usando as funcionalidades do Python. Neste exemplo, criaremos 4 variáveis com sequências de 3 bases cada, logo a seguir uniremos estas quatro sequências de bases e armazenaremos o resultado final em uma quinta variável chamada seq_final.
+
+
+    Vejam que o processo foi bastante simples, inicialmente importamos a função Seq da biblioteca Bio.seq, efetuamos a nossa atividade e no final foi exibido o conteúdo da variável seq_final, com a concatenação das quatro sequências individuais.
+
+    1.1 Comparando sequências
+
+    Usando comandos condicionais e operadores é possível realizar comparações entre sequências. Neste exercício criaremos 3 variáveis com as seguintes sequências:
+
+    Seq1 = AACCGGTT
+
+    Seq2 = AACCGGTT
+
+    Seq3 = TTCCAAGG
+
+    A seguir iremos comparar se a seq1 é igual a seq2 e depois se a se1 é igual a seq3, caso as variáveis sejam iguais, deverá ser escrito na tela: “As variáveis SeqX e SeqY são iguais” caso contrário deverá ser escrito “As variáveis SeqX e SeqY são diferentes”.
+
+    Nota:
+
+    Para realizar comparações entre sequências utilizaremos o comando condicional “if”. Como é necessário comparar diretamente as strings, será necessário usar a função “str( )”. Observe que é considerado uma boa prática inserir um comando “else”, após o if para que, caso a condição não seja cumprida, uma mensagem avise ao usuário.
+
+     
+
+    1.2 Validando sequências
+
+                Agora teremos as seguintes sequências:
+
+    Seq1 = ACTGAACCGGTTTTCCAAGGTTCCAAGGAACCGGTTAGCT
+
+    Seq2 = ACUGAACCGGUUUUCCAAGGUUCCAAGGAACCGGUUACUG
+
+                Tarefa:
+
+    Setar as sequências acima nas variáveis correspondentes, fazer com que nosso Script determine se é de DNA ou de RNA de acordo com as bases de cada sequência e imprima o resultado.
+
+     
+
+    Exemplo:
+
+    Se o script decidir que a sequência é de DNA, ele imprime: “A sequência Seq? É uma sequência de DNA!”. Caso o script decida que a sequência é de RNA ele deve imprimir: “A sequência Seq? É uma sequência de DNA!”.
+
+    Executem as tarefas e colem os scripts em Python em um arquivo, mostrando os resultados, transformem em PDF e submetam pelo Moodle.
+
+     
+
+    Boa Sorte!
+
+
+
